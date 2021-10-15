@@ -1,0 +1,150 @@
+body {
+	font-family: 'Verdana', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+
+	color: #000000;
+	background-color: #eeeeee;
+}
+
+.page-header {
+	padding: 20px 40px;
+}
+
+.page-title {
+	text-align: center;
+}
+
+.test {
+	padding: 20px 40px;
+}
+
+.test-item {
+	margin-bottom: 40px;
+}
+
+.test-body {
+	padding: 20px;
+	background-color: #FFFFFF;
+}
+
+.page-footer {
+	padding: 20px 40px;
+}
+.page-copyright {
+	text-align: center;
+	font-size: 11px;
+}
+
+
+/* -------- ADAPTIVE TABLE */
+
+.table-wrapper {
+	overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+
+    border: 5px solid #eeeeee;
+    border-collapse: collapse;
+
+    color: #655a5a;
+}
+
+.table th, 
+.table td {
+    padding: 10px 20px;
+	border: 1px solid #eeeeee;
+
+    font-size: 13px;    
+    font-family: Verdana, sans-serif;       
+    vertical-align: top;
+}
+.table th {
+    font-weight: bold; 
+    text-align: center;   
+}
+
+.table-header--line2 th:nth-child(2n+1) {
+	background-color: #eeeeee;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+
+/* -------- CATALOG */
+
+.catalog {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px;
+
+
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.product {
+	display: flex;
+	flex-direction: column;
+
+	width: 310px;	
+}
+
+.product__title {
+	text-align: center;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.product__link {
+	color: #000000;
+	text-decoration: none;
+}
+.product__link:hover {
+	text-decoration: underline;
+}
+
+.product__price {
+	text-align: center;
+}
+
+@media (max-width: 1420px) {
+	.product {
+		width: 210px;
+	}
+
+	.product img {
+		width: 210px;
+		height: 315px;
+	}
+}
+
+@media (max-width: 790px) {
+	.catalog {
+		justify-content: space-around;
+	}
+
+}
+
+/* -------- MAPS AND LOCATIONCS */
+
+.location__address-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 40px;
+}
+
+.location__info {
+	display: none;
+}
+.current-location {
+	display: block;
+}
